@@ -1,0 +1,29 @@
+### Create a student;
+POST localhost:8081/student/create
+Content-Type: application/json
+
+{
+  "name" : "Ramziddn",
+  "surname" : "Rustamov",
+  "age" : 45f
+}
+
+###Student get all;
+
+GET localhost:8081/student/all
+
+###Student update
+
+PUT localhost:8081/student/update/02b3554a-021b-4762-952a-76ad6ae15ae7
+Content-Type: application/json
+
+{
+  "name": "john",
+  "surname": "updatedSurname",
+  "age": 34
+}
+
+
+###Delete a student
+
+DELETE localhost:8081/student/delete/dac8fcc1-16f6-40cb-9a4b-ed086bd8921e
