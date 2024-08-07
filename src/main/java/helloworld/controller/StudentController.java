@@ -1,6 +1,7 @@
 package helloworld.controller;
 
 import helloworld.dto.StudentDTO;
+import jakarta.validation.Valid;
 import jakarta.websocket.server.PathParam;
 import org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
@@ -54,7 +55,7 @@ public class StudentController {
    }
 
    @RequestMapping(value="/create", method=RequestMethod.POST)
-   public StudentDTO create(@RequestBody StudentDTO dto){
+   public StudentDTO create(@Valid @RequestBody StudentDTO dto){
        dto.setId(UUID.randomUUID().toString());
        studentLsit.add(dto);
        return dto;

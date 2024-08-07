@@ -3,9 +3,9 @@ POST localhost:8081/student/create
 Content-Type: application/json
 
 {
-  "name" : "Ramziddn",
+  "name": "Ramziddin",
   "surname" : "Rustamov",
-  "age" : 45f
+  "age" : 45
 }
 
 ###Student get all;
